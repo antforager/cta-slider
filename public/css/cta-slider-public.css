@@ -1,0 +1,130 @@
+/**
+ * CTA Slider Public Styles
+ *
+ * Responsive styles for frontend carousel display
+ * Note: Bootstrap 5.3 is expected to be loaded by the theme
+ *
+ * @package    CTA_Slider
+ * @subpackage CTA_Slider/public/css
+ * @since      1.0.0
+ */
+
+/* Ensure carousel container is responsive */
+.cta-slider-carousel {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* Base image styling */
+.cta-slider-carousel .carousel-item img {
+    width: 100%;
+    display: block;
+}
+
+/* Ensure captions are readable on all backgrounds */
+.cta-slider-carousel .carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px 20px;
+    border-radius: 5px;
+    left: 10%;
+    right: 10%;
+    bottom: 20px;
+}
+
+/* Caption text styling */
+.cta-slider-carousel .carousel-caption h5 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.cta-slider-carousel .carousel-caption p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Button spacing in captions */
+.cta-slider-carousel .carousel-caption .btn {
+    margin-top: 0.5rem;
+}
+
+/* Tablet adjustments (768px and below) */
+@media (max-width: 768px) {
+    .cta-slider-carousel .carousel-caption {
+        left: 5%;
+        right: 5%;
+        bottom: 10px;
+        padding: 10px 15px;
+    }
+
+    .cta-slider-carousel .carousel-caption h5 {
+        font-size: 1.25rem;
+    }
+
+    .cta-slider-carousel .carousel-caption p {
+        font-size: 0.9rem;
+    }
+
+    .cta-slider-carousel .carousel-caption .btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* Mobile adjustments (576px and below) */
+@media (max-width: 576px) {
+    .cta-slider-carousel .carousel-caption {
+        left: 5%;
+        right: 5%;
+        bottom: 5px;
+        padding: 8px 12px;
+    }
+
+    .cta-slider-carousel .carousel-caption h5 {
+        font-size: 1rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .cta-slider-carousel .carousel-caption p {
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .cta-slider-carousel .carousel-caption .btn {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    /* Make controls smaller on mobile */
+    .cta-slider-carousel .carousel-control-prev-icon,
+    .cta-slider-carousel .carousel-control-next-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    /* Make indicators smaller on mobile */
+    .cta-slider-carousel .carousel-indicators [data-bs-target] {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 400px) */
+@media (max-width: 400px) {
+    /* Hide caption text on very small screens, keep only title and button */
+    .cta-slider-carousel .carousel-caption p {
+        display: none;
+    }
+
+    .cta-slider-carousel .carousel-caption h5 {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .cta-slider-carousel .carousel-caption .btn {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.6rem;
+    }
+}

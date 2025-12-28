@@ -1,0 +1,184 @@
+/**
+ * CTA Slider Admin Styles
+ *
+ * Styles for the WordPress admin interface
+ *
+ * @package    CTA_Slider
+ * @subpackage CTA_Slider/admin/css
+ * @since      1.0.0
+ */
+
+/* Breadcrumb Navigation */
+.cta-slider-breadcrumb {
+    font-size: 13px;
+    margin: 10px 0 15px;
+    color: #646970;
+}
+
+.cta-slider-breadcrumb a {
+    text-decoration: none;
+    color: #2271b1;
+}
+
+.cta-slider-breadcrumb a:hover {
+    color: #135e96;
+}
+
+/* Required Field Indicator */
+.required {
+    color: #d63638;
+    font-weight: bold;
+}
+
+/* Shortcode Input */
+.cta-slider-shortcode-input {
+    font-family: Consolas, Monaco, monospace;
+    font-size: 12px;
+}
+
+/* Slide Image Preview */
+#slide-image-preview img {
+    border: 1px solid #ddd;
+    padding: 5px;
+    background: #fff;
+    border-radius: 3px;
+}
+
+/* Slides Table */
+.cta-slider-slides-table .drag-handle {
+    color: #999;
+    cursor: move;
+    margin-right: 5px;
+}
+
+.cta-slider-slides-table .drag-handle:hover {
+    color: #333;
+}
+
+.cta-slider-slides-table .column-order {
+    text-align: center;
+}
+
+.cta-slider-slides-table .slide-order-number {
+    display: inline-block;
+    min-width: 20px;
+}
+
+.cta-slider-slides-table .column-image img {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.cta-slider-slides-table .column-status {
+    text-align: center;
+}
+
+/* Sortable Helper Styling */
+.cta-slider-slides-table .ui-sortable-helper {
+    background: #f0f0f1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    opacity: 0.9;
+}
+
+.cta-slider-slides-table .ui-sortable-placeholder {
+    background: #e5f5fa;
+    border: 2px dashed #72aee6;
+    visibility: visible !important;
+}
+
+/* Form Field Visibility */
+.caption-field,
+.button-field {
+    display: none;
+}
+
+/* Button Styles in Admin */
+.column-button .btn {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 4px;
+    text-decoration: none;
+    border: none;
+}
+
+.column-button .btn-primary {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+.column-button .btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.column-button .btn-success {
+    background-color: #198754;
+    color: #fff;
+}
+
+.column-button .btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.column-button .btn-warning {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.column-button .btn-info {
+    background-color: #0dcaf0;
+    color: #000;
+}
+
+.column-button .btn-light {
+    background-color: #f8f9fa;
+    color: #000;
+    border: 1px solid #ddd;
+}
+
+.column-button .btn-dark {
+    background-color: #212529;
+    color: #fff;
+}
+
+/* Toggle Slide Button */
+.cta-slider-toggle-slide {
+    font-weight: 600;
+    transition: opacity 0.2s;
+}
+
+.cta-slider-toggle-slide:hover {
+    opacity: 0.9;
+}
+
+.cta-slider-toggle-slide:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Action buttons spacing */
+.column-actions .button {
+    margin-right: 5px;
+}
+
+.column-actions .button:last-child {
+    margin-right: 0;
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 782px) {
+    .cta-slider-slides-table .column-image img {
+        max-width: 80px;
+    }
+
+    .cta-slider-shortcode-input {
+        font-size: 11px;
+    }
+
+    .column-actions .button {
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+}
